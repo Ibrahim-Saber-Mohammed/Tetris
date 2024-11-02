@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/ibrahim/Desktop/Tetris/build",
+  "command": "/usr/bin/c++  -I/home/ibrahim/Desktop/Tetris/inc -I/usr/local/include -std=gnu++11 -o CMakeFiles/Tetris.dir/src/Game.cpp.o -c /home/ibrahim/Desktop/Tetris/src/Game.cpp",
+  "file": "/home/ibrahim/Desktop/Tetris/src/Game.cpp"
+},
+{
+  "directory": "/home/ibrahim/Desktop/Tetris/build",
+  "command": "/usr/bin/c++  -I/home/ibrahim/Desktop/Tetris/inc -I/usr/local/include -std=gnu++11 -o CMakeFiles/Tetris.dir/src/Grid.cpp.o -c /home/ibrahim/Desktop/Tetris/src/Grid.cpp",
+  "file": "/home/ibrahim/Desktop/Tetris/src/Grid.cpp"
+},
+{
+  "directory": "/home/ibrahim/Desktop/Tetris/build",
+  "command": "/usr/bin/c++  -I/home/ibrahim/Desktop/Tetris/inc -I/usr/local/include -std=gnu++11 -o CMakeFiles/Tetris.dir/src/Colors.cpp.o -c /home/ibrahim/Desktop/Tetris/src/Colors.cpp",
+  "file": "/home/ibrahim/Desktop/Tetris/src/Colors.cpp"
+},
+{
+  "directory": "/home/ibrahim/Desktop/Tetris/build",
+  "command": "/usr/bin/c++  -I/home/ibrahim/Desktop/Tetris/inc -I/usr/local/include -std=gnu++11 -o CMakeFiles/Tetris.dir/src/block.cpp.o -c /home/ibrahim/Desktop/Tetris/src/block.cpp",
+  "file": "/home/ibrahim/Desktop/Tetris/src/block.cpp"
+},
+{
+  "directory": "/home/ibrahim/Desktop/Tetris/build",
+  "command": "/usr/bin/c++  -I/home/ibrahim/Desktop/Tetris/inc -I/usr/local/include -std=gnu++11 -o CMakeFiles/Tetris.dir/src/Blocks.cpp.o -c /home/ibrahim/Desktop/Tetris/src/Blocks.cpp",
+  "file": "/home/ibrahim/Desktop/Tetris/src/Blocks.cpp"
+}
+]
