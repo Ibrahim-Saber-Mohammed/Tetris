@@ -6,17 +6,22 @@
 #include "Colors.hpp"
 #include "block.hpp"
 
-namespace T{
+namespace Tetris
+{
 
-    class Grid{
-        private:
+    class Grid
+    {
+    private:
         int rows_{};
         int cols_{};
         int cellSize_{};
         std::vector<Color> gridCellsColors_;
         int grid_[20][10];
+        bool IsRowFull(int row);
+        void ClearRow(int row);
+        void ShiftRowDown(int row, int numOfSteps);
 
-        public:
+    public:
         Grid();
         void InializeGrid(void);
         void PrintGrid(void);
@@ -24,7 +29,7 @@ namespace T{
         bool IsCellOutside(int row, int col);
         void updateGrid(const std::vector<Position> &tiles, BlockType BlockIdValue);
         bool IsCellEmpty(int row, int col);
-        
+        int ClearFullRows(void);
     };
 }
 #endif

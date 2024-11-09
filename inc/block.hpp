@@ -6,7 +6,7 @@
 #include <raylib.h>
 #include "Colors.hpp"
 
-namespace T
+namespace Tetris
 {
     struct Position
     {
@@ -44,7 +44,7 @@ namespace T
         std::map<RotationStates, std::vector<Position>> Blockcells_;
     public:
         Block(void);
-        virtual void Draw(void);
+        virtual void Draw(int offsetX, int offsetY);
         virtual void Move(int row, int col);
         std::vector<Position> GetBlockCellsPositions(void);
         virtual void Rotate(void);

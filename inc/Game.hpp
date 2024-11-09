@@ -6,46 +6,33 @@
 #include "Grid.hpp"
 #include "block.hpp"
 
-namespace T
+namespace Tetris
 {
     class Game{
         private:
+        bool gameOver_{false};
+        size_t socre_{0};
         Grid grid_{};
         Block currentBlock_;
         Block nextBlock_;
         std::vector<Block>Blocks;
+        std::vector<Block>GameBlocks_;
         void MoveToRight(void);
         void MoveToLeft(void);
-        void MoveDown(void);
         void Rotate(void);
         bool IsBlockOutside(void);
-        std::vector<Block>GameBlocks_;
         Block GetRandomBlock(void);
         void LockBlock(void);
         bool IsBlockFits(void);
-
+        void ResetGame(void);
+        void UpdateScore(int completedRows, int moveDownSteps);
+        void DrawUserInfo(void);
     public:
         Game();
+        void MoveDown(void);
         void Draw();
         void HandleUserEvents();
+    };
 
-    };
-    class Tetris
-    {
-        private:
-        int width_{300};
-        int height_{600};
-        std::string title_ {""};
-        Color backGroundColor_{};
-        Grid grid_;
-        Block block_;
-        
-    public:
-    void CreateWindow(int FramePerSecond=60);
-    void setBackGroundColor(const Color& color );
-    Tetris(int width, int heihgt, const char* title);
-    void StartGame(void);
-    ~Tetris();
-    };
 }
 #endif

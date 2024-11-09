@@ -1,5 +1,5 @@
 #include "block.hpp"
-namespace T
+namespace Tetris
 {
     class LBlock : public Block
     {

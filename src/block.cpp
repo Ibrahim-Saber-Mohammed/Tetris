@@ -1,20 +1,20 @@
 #include "block.hpp"
 
-namespace T
+namespace Tetris
 {
 
     Block::Block(void) : cellSize_{30}, rotationState_{RotationStates::NO_ROTATE}, row_offset_{0}, col_offset_{0}
     {
         blocksColors_ = GetCellColors();
     }
-    void Block::Draw(void)
+    void Block::Draw(int offsetX, int offsetY)
     {
         auto tiles = GetBlockCellsPositions();
         for (auto item : tiles)
         {
             DrawRectangle(
-                (item.col_ * cellSize_) + 1,
-                (item.row_ * cellSize_) + 1,
+                (item.col_ * cellSize_) + offsetX,
+                (item.row_ * cellSize_) + offsetY,
                 (cellSize_ - 1),
                 (cellSize_ - 1),
                 blocksColors_[static_cast<int>(blockTypeId_)]);
